@@ -30,7 +30,7 @@ public class ExtentManager {
 
 			String reportDir = System.getProperty("user.dir") + "/reports";
 
-			String reportPath = reportDir + "/Extent_" + timestamp + ".html";
+			String reportPath = reportDir + "/index.html";
 
 			new File(reportDir).mkdirs();
 
