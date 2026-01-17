@@ -17,6 +17,12 @@
 			<class name="TestCases.ProductPageTest" />
 		</classes>
 	</test> <!--
+		
 	Test -->
+	<test thread-count="5" name="CartTest">
+		<classes>
+			<class name="TestCases.CartTest" />
+		</classes>
+	</test>
 </suite> <!--
 Suite -->
