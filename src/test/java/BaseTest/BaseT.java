@@ -32,6 +32,7 @@ public class BaseT {
 		ops.setExperimentalOption("prefs", prefs);
 		ops.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		ops.addArguments("--disable-notifications");
+		ops.addArguments("incognito");
 		driver.set(new ChromeDriver(ops));
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

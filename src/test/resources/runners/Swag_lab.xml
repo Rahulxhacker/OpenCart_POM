@@ -24,5 +24,10 @@
 			<class name="TestCases.CartTest" />
 		</classes>
 	</test>
+	<test thread-count="5" name="CheckOutStepOnePageTest">
+		<classes>
+			<class name="TestCases.CheckOutStepOnePageTest" />
+		</classes>
+	</test>
 </suite> <!--
 Suite -->
