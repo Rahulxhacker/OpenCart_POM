@@ -34,5 +34,10 @@
 			<class name="TestCases.CheckoutOverViewPageTest" />
 		</classes>
 	</test>
+	<test thread-count="5" name="ThankyouPageTest">
+		<classes>
+			<class name="TestCases.ThankyouPageTest" />
+		</classes>
+	</test>
 </suite> <!--
 Suite -->
