@@ -7,6 +7,12 @@
 
 	</listeners>
 	<test thread-count="5" name="LoginTest">
+		<!--<groups>
+			<run>
+				<include name="sanity"></include>
+				<exclude name="smoke"></exclude>
+			</run>
+		</groups>-->
 		<classes>
 			<class name="TestCases.LoginTest" />
 		</classes>
