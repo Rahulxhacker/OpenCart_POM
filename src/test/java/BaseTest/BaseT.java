@@ -27,7 +27,7 @@ public class BaseT {
 		return driver.get();
 	}
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() throws MalformedURLException {
 		ChromeOptions ops = new ChromeOptions();
 		Map<String, Object> prefs = new HashMap<>();
@@ -44,7 +44,7 @@ public class BaseT {
 		getDriver().get("https://www.saucedemo.com/");
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void tearDown() {
 		if (getDriver() != null) {
 			getDriver().quit();
