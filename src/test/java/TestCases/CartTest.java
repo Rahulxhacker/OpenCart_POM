@@ -18,14 +18,9 @@ public class CartTest extends BaseT {
 	@Test(priority = 1, description = "Verify if land on cart page")
 	public void verifyLandOnCartPage() {
 		LoginPage loginPage = new LoginPage(getDriver());
-		loginPage.doLogin("standard_user", "secret_sauce");
-
-		ProductPage productPage = new ProductPage(getDriver());
-		productPage.goToCart();
-
-		CartPage cartPage = new CartPage(getDriver());
-
-		Assert.assertTrue(cartPage.isYourCartDisplayed(), "Cart page does not load");
+		boolean b = loginPage.doLogin("standard_user", "secret_sauce").goToCart().isYourCartDisplayed();
+		// In above code we are using Method Chaining Concept
+		Assert.assertTrue(b, "Cart page does not load");
 
 	}
 
