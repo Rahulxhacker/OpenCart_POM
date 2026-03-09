@@ -27,6 +27,7 @@ public class BaseT {
 		return driver.get();
 	}
 
+	//This will run before every Method
 	@BeforeMethod
 	public void setUp() throws MalformedURLException {
 		ChromeOptions ops = new ChromeOptions();
