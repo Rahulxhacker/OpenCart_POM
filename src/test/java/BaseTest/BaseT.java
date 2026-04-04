@@ -27,7 +27,7 @@ public class BaseT {
 		return driver.get();
 	}
 
-	//This will run before every Method
+	// This will run before every Method
 	@BeforeMethod
 	public void setUp() throws MalformedURLException {
 		ChromeOptions ops = new ChromeOptions();
@@ -45,10 +45,14 @@ public class BaseT {
 		getDriver().get("https://www.saucedemo.com/");
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
-		if (getDriver() != null) {
-			getDriver().quit();
+		try {
+			if (getDriver() != null) {
+				getDriver().quit();
+			}
+		} catch (Exception e) {
+			System.out.println("Driver quit failed (session may already be closed): " + e.getMessage());
 		}
 	}
 
