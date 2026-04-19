@@ -4,7 +4,7 @@
 	<listeners>
 
 		<listener class-name="Utils.ExtentListeners"></listener>
-
+		<listener class-name="Utils.iretryListener"></listener>
 	</listeners>
 	<test thread-count="5" name="LoginTest">
 		<!--<groups>

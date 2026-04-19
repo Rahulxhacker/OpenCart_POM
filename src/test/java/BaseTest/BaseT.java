@@ -38,7 +38,7 @@ public class BaseT {
 		ops.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		ops.addArguments("--disable-notifications");
 		ops.addArguments("incognito");
-		driver.set(new RemoteWebDriver(URI.create("http://192.168.47.116:4444/wd/hub").toURL(), ops));
+		driver.set(new RemoteWebDriver(URI.create("http://192.168.57.136:4444/wd/hub").toURL(), ops));
 //		driver.set(new ChromeDriver(ops));
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
